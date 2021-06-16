@@ -3,26 +3,31 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
+/* inizio main */
 main{
     position: relative;
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    font-family: 'Rubik Mono One', sans-serif;
 }
 
+/* inizio navbar */
 nav{
     position: fixed;
     right: 0; 
     top: 0;
+    z-index: 2;
 }
-
 nav li{
     display: inline-block; 
     margin: 2vw 1vw;
     list-style: none;
 }
-
 nav a{
     display: inline-block;
     text-decoration: none;
@@ -31,15 +36,38 @@ nav a{
     color: black;
     text-align: center;
     line-height: 50px;
-    background-color: lightblue;
+    background-color: white;
     border-radius: 50%;
     font-size: 20px;
 }
+/* fine navbar */
 
 .container{
-    height: 100vh;
-}
-
-.image{
     position: relative;
+    height: 100vh;
+    width: 100%;
 }
+.image{
+    position: absolute;
+    width: 80vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-image{
+    text-align: center;
+    font-size: 5vh;
+}
+#shoes1{
+    background-color: red;
+    color: yellow;
+}
+#shoes2{
+    background-color: green;
+    color: yellow;
+}
+#shoes3{
+    background-color: yellow;
+    color: green;
+}
+/* fine main */
